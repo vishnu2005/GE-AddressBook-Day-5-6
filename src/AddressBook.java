@@ -49,6 +49,17 @@ public class AddressBook {
         }
         System.out.println("Contact not found.");
     }
+    //UC-5:
+    public void displayContacts() {
+        if (contacts.isEmpty()) {
+            System.out.println("No contacts available.");
+            return;
+        }
+        System.out.println("\n----- Address Book -----");
+        for (Contact contact : contacts) {
+            System.out.println(contact);
+        }
+    }
 
     public List<Contact> getContacts() {
         return contacts;
